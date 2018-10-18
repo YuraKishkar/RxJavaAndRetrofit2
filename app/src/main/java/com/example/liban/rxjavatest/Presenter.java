@@ -18,9 +18,22 @@ public class Presenter implements Model.postsBack {
         mModel.getPosts(mContext, this);
     }
 
+    public void getPosts(){
+        mModel.getPosts(mContext, this);
+    }
+
 
     @Override
     public void dataPosts(List<Users> users) {
         mView.onData(users);
+    }
+
+    @Override
+    public void showError(String error) {
+        mView.onError(error);
+    }
+
+    public void onMainActivityDestroy(){
+        mModel.onDispose();
     }
 }
