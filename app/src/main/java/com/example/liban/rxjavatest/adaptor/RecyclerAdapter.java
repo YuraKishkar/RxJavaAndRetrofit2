@@ -1,4 +1,4 @@
-package com.example.liban.rxjavatest;
+package com.example.liban.rxjavatest.adaptor;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -7,6 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.liban.rxjavatest.R;
+import com.example.liban.rxjavatest.model.Users;
 
 import java.util.List;
 

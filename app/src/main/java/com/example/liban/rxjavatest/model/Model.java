@@ -1,8 +1,9 @@
-package com.example.liban.rxjavatest;
+package com.example.liban.rxjavatest.model;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 
+import com.example.liban.rxjavatest.api.Api;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;

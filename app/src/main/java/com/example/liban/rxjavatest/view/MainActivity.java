@@ -1,4 +1,4 @@
-package com.example.liban.rxjavatest;
+package com.example.liban.rxjavatest.view;
 
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
@@ -6,6 +6,11 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.example.liban.rxjavatest.R;
+import com.example.liban.rxjavatest.adaptor.RecyclerAdapter;
+import com.example.liban.rxjavatest.model.Users;
+import com.example.liban.rxjavatest.presenter.Presenter;
 
 import java.util.List;
 

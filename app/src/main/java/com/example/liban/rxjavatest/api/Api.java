@@ -1,4 +1,6 @@
-package com.example.liban.rxjavatest;
+package com.example.liban.rxjavatest.api;
+
+import com.example.liban.rxjavatest.model.Users;
 
 import java.util.List;
 

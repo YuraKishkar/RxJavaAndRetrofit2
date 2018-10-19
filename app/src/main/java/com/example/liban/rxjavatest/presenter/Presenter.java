@@ -1,6 +1,10 @@
-package com.example.liban.rxjavatest;
+package com.example.liban.rxjavatest.presenter;
 
 import android.content.Context;
+
+import com.example.liban.rxjavatest.model.Users;
+import com.example.liban.rxjavatest.view.View;
+import com.example.liban.rxjavatest.model.Model;
 
 import java.util.List;
 
