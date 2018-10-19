@@ -1,6 +1,10 @@
-package com.example.liban.rxjavatest;
+package com.example.liban.rxjavatest.presenter;
 
 import android.content.Context;
+
+import com.example.liban.rxjavatest.model.Users;
+import com.example.liban.rxjavatest.view.View;
+import com.example.liban.rxjavatest.model.Model;
 
 import java.util.List;
 
@@ -18,9 +22,22 @@ public class Presenter implements Model.postsBack {
         mModel.getPosts(mContext, this);
     }
 
+    public void getPosts(){
+        mModel.getPosts(mContext, this);
+    }
+
 
     @Override
     public void dataPosts(List<Users> users) {
         mView.onData(users);
+    }
+
+    @Override
+    public void showError(String error) {
+        mView.onError(error);
+    }
+
+    public void onMainActivityDestroy(){
+        mModel.onDispose();
     }
 }
